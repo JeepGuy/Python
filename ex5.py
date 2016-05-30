@@ -45,3 +45,12 @@ print "He's got %s eyes and %s hair." % (myeyes, myhair)
 print "His teeth are usually %s depending on the coffee." % my_teeth
 # This line is tricky, try to get it exactly right
 print "If I add %d, %d, and %d I get %d." % ( myage, myheight, myweight, myage + myheight + myweight)
+
+
+print (" -----------------------------------------")
+print (" ")
+print ("This version adds parentheses around the string.")
+print (" -----------------------------------------")
+print (" ")
+
+print ("The name of the author is %s" %my_name)
