@@ -2,9 +2,9 @@
 # Excersize 10
 # _*_ coding: utf-8 -*-
 
-tabby_cat = "\tI'm tabbed in."
-persian_cat = "I'm split\non a line"
-backslash_cat = "I'm \\ a \\ cat."
+tabby_cat = "\nI'm tabbed in."
+persian_cat = "\t I'm split\non a line"
+backslash_cat = "I'm \\\ a  cat."
 
 # Print statements
 ##########
@@ -14,6 +14,7 @@ I'll do a list:
 \t* Cat food
 \t* Fishes
 \t* Catnip\n\t* Grass
+\r \t* An extra carriage return
 '''
 
 print tabby_cat
@@ -21,8 +22,3 @@ print persian_cat
 print backslash_cat
 print fat_cat
 
-print "-----------------------------"
-
-# while True:
-#    for i in ["/","-","|","\\","|"]:
-#        print "%s\r"  %i,
