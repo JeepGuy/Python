@@ -1,0 +1,540 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="daa81fc1-67d8-4557-9bac-c2542a8439d6" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../../AWS_concepts/aws-concepts-power-point-slides.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Ansible/Ansible Conditionals" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Ansible/Ansible Inventory" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Ansible/Ansible Loops" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Ansible/Ansible Modules" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Ansible/Ansible Playbooks" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Ansible/Ansible Roles" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Ansible/Ansible Variables" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Ansible/Ansible_Sample_Inventory" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Ansible/Ansible_var_use.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Ansible/Installation" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Ansible/Yaml_basics_from_DockerCourse.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Ansible/Yaml_install_tips.pages" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Ansible/Yaml_install_tips.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Ansible/include vars tasks.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Ansible/roles structure.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Ansible/roles structure2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Ansible/roles structure3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Docker" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Linux/Linux_BASH/scripts-used-to-create-this-course/convert-slides-to-png.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Linux/Linux_BASH/scripts-used-to-create-this-course/mp4-to-mono-wav.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Linux/Linux_BASH/scripts/backup-rhevm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Linux/Linux_BASH/scripts/convert-nic-to-bonded" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Linux/Linux_BASH/scripts/email-when-up" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Linux/Linux_BASH/scripts/generate-random-password" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Linux/Linux_BASH/scripts/hostnameVAR.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Linux/Linux_BASH/scripts/ping-host" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Linux/Linux_BASH/scripts/prettify-multipath" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Linux/Linux_BASH/scripts/show-cmdb-info" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Linux/Linux_BASH/scripts/show-disk-space-used-by-vg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Linux/Linux_BASH/scripts/show-io-scheduler" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Linux/Linux_BASH/scripts/show-network-port-info" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Linux/Linux_BASH/scripts/show-total-disk-space-used" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Linux/Linux_BASH/scripts/show-wwpns" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Linux/Linux_BASH/scripts/tail-db2diag" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Linux/Linux_BASH/scripts/touch-test" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Linux/Linux_BASH/shell-scripting-course/04ShellScriptingCheatSheetandReference.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Linux/Linux_BASH/shell-scripting-course/ShellScriptingCheatSheetandReference.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Linux/Linux_BASH/shell-scripting-course/case-statements/lessons/case-01.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Linux/Linux_BASH/shell-scripting-course/case-statements/lessons/case-02.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Linux/Linux_BASH/shell-scripting-course/case-statements/lessons/case-03.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Linux/Linux_BASH/shell-scripting-course/case-statements/lessons/case-04.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Linux/Linux_BASH/shell-scripting-course/case-statements/lessons/case-05.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Linux/Linux_BASH/shell-scripting-course/case-statements/lessons/case-06.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Linux/Linux_BASH/shell-scripting-course/case-statements/practice-exercises/PracticeExercises-CaseStatements.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Linux/Linux_BASH/shell-scripting-course/case-statements/practice-exercises/sleep-walking-server" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Linux/Linux_BASH/shell-scripting-course/case-statements/practice-exercises/solution-01.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Linux/Linux_BASH/shell-scripting-course/debugging/lessons/debugging-01.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Linux/Linux_BASH/shell-scripting-course/debugging/lessons/debugging-02.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Linux/Linux_BASH/shell-scripting-course/debugging/lessons/debugging-03.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Linux/Linux_BASH/shell-scripting-course/debugging/lessons/debugging-04.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Linux/Linux_BASH/shell-scripting-course/debugging/lessons/debugging-05.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Linux/Linux_BASH/shell-scripting-course/debugging/lessons/debugging-06.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Linux/Linux_BASH/shell-scripting-course/debugging/lessons/debugging-07.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Linux/Linux_BASH/shell-scripting-course/debugging/lessons/debugging-08.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Linux/Linux_BASH/shell-scripting-course/debugging/lessons/debugging-09.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Linux/Linux_BASH/shell-scripting-course/debugging/lessons/debugging-10.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Linux/Linux_BASH/shell-scripting-course/debugging/lessons/debugging-11.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Linux/Linux_BASH/shell-scripting-course/debugging/lessons/debugging-12.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Linux/Linux_BASH/shell-scripting-course/debugging/lessons/debugging-13.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Linux/Linux_BASH/shell-scripting-course/debugging/lessons/debugging-14.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Linux/Linux_BASH/shell-scripting-course/debugging/lessons/debugging-15.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Linux/Linux_BASH/shell-scripting-course/debugging/lessons/debugging-16.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Linux/Linux_BASH/shell-scripting-course/debugging/lessons/debugging-17.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Linux/Linux_BASH/shell-scripting-course/debugging/practice-exercises/PracticeExercises-Debugging.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Linux/Linux_BASH/shell-scripting-course/debugging/practice-exercises/solution-01.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Linux/Linux_BASH/shell-scripting-course/debugging/practice-exercises/solution-02.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Linux/Linux_BASH/shell-scripting-course/exit-statuses-and-return-codes/lessons/exit-status-01.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Linux/Linux_BASH/shell-scripting-course/exit-statuses-and-return-codes/lessons/exit-status-02.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Linux/Linux_BASH/shell-scripting-course/exit-statuses-and-return-codes/lessons/exit-status-03.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Linux/Linux_BASH/shell-scripting-course/exit-statuses-and-return-codes/lessons/exit-status-04.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Linux/Linux_BASH/shell-scripting-course/exit-statuses-and-return-codes/lessons/exit-status-05.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Linux/Linux_BASH/shell-scripting-course/exit-statuses-and-return-codes/lessons/exit-status-06.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Linux/Linux_BASH/shell-scripting-course/exit-statuses-and-return-codes/practice-exercises/PracticeExercises-ExitStatusesandReturnCodes.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Linux/Linux_BASH/shell-scripting-course/exit-statuses-and-return-codes/practice-exercises/solution-01.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Linux/Linux_BASH/shell-scripting-course/exit-statuses-and-return-codes/practice-exercises/solution-02.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Linux/Linux_BASH/shell-scripting-course/exit-statuses-and-return-codes/practice-exercises/solution-03.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Linux/Linux_BASH/shell-scripting-course/functions/lessons/functions-01.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Linux/Linux_BASH/shell-scripting-course/functions/lessons/functions-02.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Linux/Linux_BASH/shell-scripting-course/functions/lessons/functions-03.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Linux/Linux_BASH/shell-scripting-course/functions/lessons/functions-04.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Linux/Linux_BASH/shell-scripting-course/functions/lessons/functions-05.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Linux/Linux_BASH/shell-scripting-course/functions/lessons/functions-06.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Linux/Linux_BASH/shell-scripting-course/functions/lessons/functions-07.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Linux/Linux_BASH/shell-scripting-course/functions/lessons/functions-08.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Linux/Linux_BASH/shell-scripting-course/functions/lessons/functions-09.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Linux/Linux_BASH/shell-scripting-course/functions/lessons/functions-10.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Linux/Linux_BASH/shell-scripting-course/functions/practice-exercises/PracticeExercises-Functions.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Linux/Linux_BASH/shell-scripting-course/functions/practice-exercises/solution-01.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Linux/Linux_BASH/shell-scripting-course/functions/practice-exercises/solution-02.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Linux/Linux_BASH/shell-scripting-course/logging/lessons/logging-00.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Linux/Linux_BASH/shell-scripting-course/logging/lessons/logging-01.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Linux/Linux_BASH/shell-scripting-course/logging/practice-exercises/PracticeExercises-Logging.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Linux/Linux_BASH/shell-scripting-course/logging/practice-exercises/solution-01.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Linux/Linux_BASH/shell-scripting-course/logging/practice-exercises/solution-02.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Linux/Linux_BASH/shell-scripting-course/shell-script-checklist-and-template/ShellScriptCheckList.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Linux/Linux_BASH/shell-scripting-course/shell-script-checklist-and-template/template.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Linux/Linux_BASH/shell-scripting-course/shell-scripting-succinctly/lessons/archive_user-01.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Linux/Linux_BASH/shell-scripting-course/shell-scripting-succinctly/lessons/archive_user-02.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Linux/Linux_BASH/shell-scripting-course/shell-scripting-succinctly/lessons/archive_user-03.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Linux/Linux_BASH/shell-scripting-course/shell-scripting-succinctly/lessons/archive_user.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Linux/Linux_BASH/shell-scripting-course/shell-scripting-succinctly/lessons/hi.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Linux/Linux_BASH/shell-scripting-course/shell-scripting-succinctly/lessons/rename-pics.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Linux/Linux_BASH/shell-scripting-course/shell-scripting-succinctly/lessons/script-01.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Linux/Linux_BASH/shell-scripting-course/shell-scripting-succinctly/lessons/script-02.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Linux/Linux_BASH/shell-scripting-course/shell-scripting-succinctly/lessons/script-03.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Linux/Linux_BASH/shell-scripting-course/shell-scripting-succinctly/lessons/script-04.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Linux/Linux_BASH/shell-scripting-course/shell-scripting-succinctly/lessons/script-05.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Linux/Linux_BASH/shell-scripting-course/shell-scripting-succinctly/lessons/script-06.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Linux/Linux_BASH/shell-scripting-course/shell-scripting-succinctly/lessons/script-07.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Linux/Linux_BASH/shell-scripting-course/shell-scripting-succinctly/lessons/script-08.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Linux/Linux_BASH/shell-scripting-course/shell-scripting-succinctly/lessons/script-09.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Linux/Linux_BASH/shell-scripting-course/shell-scripting-succinctly/lessons/script-10.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Linux/Linux_BASH/shell-scripting-course/shell-scripting-succinctly/lessons/script-11.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Linux/Linux_BASH/shell-scripting-course/shell-scripting-succinctly/lessons/script-12.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Linux/Linux_BASH/shell-scripting-course/shell-scripting-succinctly/lessons/script-13.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Linux/Linux_BASH/shell-scripting-course/shell-scripting-succinctly/lessons/script-14.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Linux/Linux_BASH/shell-scripting-course/shell-scripting-succinctly/lessons/script-15.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Linux/Linux_BASH/shell-scripting-course/shell-scripting-succinctly/lessons/sleepy.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Linux/Linux_BASH/shell-scripting-course/shell-scripting-succinctly/practice-exercises/PracticeExercises-ShellScriptingSuccinctly.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Linux/Linux_BASH/shell-scripting-course/shell-scripting-succinctly/practice-exercises/solution-01.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Linux/Linux_BASH/shell-scripting-course/shell-scripting-succinctly/practice-exercises/solution-02.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Linux/Linux_BASH/shell-scripting-course/shell-scripting-succinctly/practice-exercises/solution-03.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Linux/Linux_BASH/shell-scripting-course/shell-scripting-succinctly/practice-exercises/solution-04.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Linux/Linux_BASH/shell-scripting-course/shell-scripting-succinctly/practice-exercises/solution-05.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Linux/Linux_BASH/shell-scripting-course/shell-scripting-succinctly/practice-exercises/solution-06.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Linux/Linux_BASH/shell-scripting-course/shell-scripting-succinctly/practice-exercises/solution-07.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Linux/Linux_BASH/shell-scripting-course/shell-scripting-succinctly/practice-exercises/solution-08.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Linux/Linux_BASH/shell-scripting-course/while-loops/lessons/while-loops-01.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Linux/Linux_BASH/shell-scripting-course/while-loops/lessons/while-loops-02.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Linux/Linux_BASH/shell-scripting-course/while-loops/lessons/while-loops-03.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Linux/Linux_BASH/shell-scripting-course/while-loops/lessons/while-loops-04.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Linux/Linux_BASH/shell-scripting-course/while-loops/lessons/while-loops-05.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Linux/Linux_BASH/shell-scripting-course/while-loops/lessons/while-loops-06.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Linux/Linux_BASH/shell-scripting-course/while-loops/lessons/while-loops-07.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Linux/Linux_BASH/shell-scripting-course/while-loops/lessons/while-loops-08.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Linux/Linux_BASH/shell-scripting-course/while-loops/practice-exercises/PracticeExercises-WhileLoops.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Linux/Linux_BASH/shell-scripting-course/while-loops/practice-exercises/solution-01.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Linux/Linux_BASH/shell-scripting-course/while-loops/practice-exercises/solution-02.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Linux/Linux_BASH/shell-scripting-course/while-loops/practice-exercises/solution-03.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Linux/Linux_BASH/shell-scripting-course/wildcards/lessons/copy-www-01.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Linux/Linux_BASH/shell-scripting-course/wildcards/lessons/copy-www-02.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Linux/Linux_BASH/shell-scripting-course/wildcards/lessons/copy-www-03.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Linux/Linux_BASH/shell-scripting-course/wildcards/practice-exercises/PracticeExercises-Wildcards.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Linux/Linux_BASH/shell-scripting-course/wildcards/practice-exercises/solution-01.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Linux/Linux_BASH/shell-scripting-course/wildcards/practice-exercises/solution-02.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Linux/Linux_BASH/shell-scripting-course/z_Exercises/Section_6 Wildcards/copy-www.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Linux/Linux_BASH/shell-scripting-course/z_Exercises/Section_6 Wildcards/solution2.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Linux/Linux_BASH/shell-scripting-course/z_Exercises/Section_6 Wildcards/wildcards1.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Linux/Linux_BASH/shell-scripting-course/z_Exercises/shellfun.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Linux/Linux_BASH/shell-scripting-course/z_Exercises/shellfunvar.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Linux/Linux_BASH/tip_sheets/04ShellScriptingCheatSheetandReference.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Linux/Linux_BASH/tip_sheets/FilePermissions.pages" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Linux/Linux_BASH/tip_sheets/Linux Bianry perms.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Linux/Linux_BASH/tip_sheets/Linux Chmod.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Linux/Linux_BASH/tip_sheets/Linux Script Tips Jim.pages" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Linux/Linux_BASH/tip_sheets/Linux Tips.docx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Linux/Linux_BASH/tip_sheets/The Linux Man Page.pages" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Linux/Linux_BASH/tip_sheets/The Linux Man page.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Linux/Linux_BASH/tip_sheets/TheLinuxCommandLineBook.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Linux/Linux_BASH/tip_sheets/file_compare.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Linux/Linux_BASH/tip_sheets/linux_cheatsheet_bw.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Linux/Linux_BASH/tip_sheets/man-page-cheat-sheet.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PythonBootNotes.py/variables.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PythonStringManipulation.py/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mileage_convertor.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../kubernetes/AWS web ui" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../kubernetes/Kubernetes_course_bad/Namecheap.com Order Summary (Order# 31430786, Order Ref# jeepguy-173.69.135.182-10ea371147b44309a7e91a3a41aceb4c );.rtf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../kubernetes/Kubernetes_course_bad/devops-box-master_bad/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../kubernetes/Kubernetes_course_bad/devops-box-master_bad/Vagrantfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../kubernetes/Kubernetes_course_bad/devops-box-master_bad/scripts/install.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../kubernetes/k8s_screens_etc/Authentication.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../kubernetes/k8s_screens_etc/RBAC complex roles.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../kubernetes/k8s_screens_etc/RBAC pre-defined roles.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../kubernetes/k8s_screens_etc/RBACs.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../kubernetes/k8s_screens_etc/Screen Shot 2018-01-15 at 6.27.29 PM.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../kubernetes/k8s_screens_etc/configMap override.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../kubernetes/k8s_screens_etc/k8s-testsuite/Screen Shot 2018-02-11 at 7.12.27 PM.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../kubernetes/k8s_screens_etc/k8s-testsuite/Screen Shot 2018-02-11 at 7.13.05 PM.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../kubernetes/k8s_screens_etc/k8s-testsuite/Screen Shot 2018-02-11 at 7.13.29 PM.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../kubernetes/k8s_screens_etc/k8s-testsuite/Screen Shot 2018-02-11 at 7.14.07 PM.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../kubernetes/k8s_screens_etc/k8s-testsuite/Screen Shot 2018-02-11 at 7.53.44 PM.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../kubernetes/k8s_screens_etc/k8s_dashboard/Elastic_k8s.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../kubernetes/k8s_screens_etc/k8s_dashboard/Screen Shot 2017-04-23 at 9.58.20 PM.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../kubernetes/k8s_screens_etc/k8s_dashboard/Screen Shot 2018-02-11 at 11.48.14 AM.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../kubernetes/k8s_screens_etc/k8s_dashboard/Screen Shot 2018-02-11 at 11.50.01 AM.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../kubernetes/k8s_screens_etc/k8s_dashboard/Screen Shot 2018-02-11 at 11.52.17 AM.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../kubernetes/k8s_screens_etc/k8s_dashboard/Screen Shot 2018-02-11 at 11.53.35 AM.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../kubernetes/k8s_screens_etc/k8s_dashboard/Screen Shot 2018-02-11 at 12.46.47 PM.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../kubernetes/k8s_screens_etc/k8s_dashboard/aws alias.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../kubernetes/script fix.pages" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../kubernetes/ubuntu/Ansible for the Absolute Beginner - Hands-On | Udemy.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../kubernetes_advanced/k8s-testsuite-master/Readme.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../kubernetes_advanced/k8s-testsuite-master/k8s-test-suite custom/k8s-testsuite-load" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../kubernetes_advanced/k8s-testsuite-master/k8s-test-suite custom/k8s-testsuite-network" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../kubernetes_advanced/k8s-testsuite-master/k8s-test-suite custom/k8s-testsuite-network-results-11Feb.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../kubernetes_advanced/k8s-testsuite-master/load-test/.helmignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../kubernetes_advanced/k8s-testsuite-master/load-test/Chart.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../kubernetes_advanced/k8s-testsuite-master/load-test/templates/NOTES.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../kubernetes_advanced/k8s-testsuite-master/load-test/templates/aggregator-pod.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../kubernetes_advanced/k8s-testsuite-master/load-test/templates/aggregator-role.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../kubernetes_advanced/k8s-testsuite-master/load-test/templates/aggregator-rolebinding.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../kubernetes_advanced/k8s-testsuite-master/load-test/templates/aggregator-sa.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../kubernetes_advanced/k8s-testsuite-master/load-test/templates/loadbots-rc.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../kubernetes_advanced/k8s-testsuite-master/load-test/templates/webserver-rc.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../kubernetes_advanced/k8s-testsuite-master/load-test/templates/webserver-svc.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../kubernetes_advanced/k8s-testsuite-master/load-test/values.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../kubernetes_advanced/k8s-testsuite-master/load-test_noRABC/.helmignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../kubernetes_advanced/k8s-testsuite-master/load-test_noRABC/Chart.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../kubernetes_advanced/k8s-testsuite-master/load-test_noRABC/templates/NOTES.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../kubernetes_advanced/k8s-testsuite-master/load-test_noRABC/templates/aggregator-pod.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../kubernetes_advanced/k8s-testsuite-master/load-test_noRABC/templates/aggregator-role.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../kubernetes_advanced/k8s-testsuite-master/load-test_noRABC/templates/aggregator-rolebinding.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../kubernetes_advanced/k8s-testsuite-master/load-test_noRABC/templates/aggregator-sa.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../kubernetes_advanced/k8s-testsuite-master/load-test_noRABC/templates/loadbots-rc.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../kubernetes_advanced/k8s-testsuite-master/load-test_noRABC/templates/webserver-rc.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../kubernetes_advanced/k8s-testsuite-master/load-test_noRABC/templates/webserver-svc.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../kubernetes_advanced/k8s-testsuite-master/load-test_noRABC/values.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../kubernetes_advanced/k8s-testsuite-master/network-test/.helmignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../kubernetes_advanced/k8s-testsuite-master/network-test/Chart.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../kubernetes_advanced/k8s-testsuite-master/network-test/templates/NOTES.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../kubernetes_advanced/k8s-testsuite-master/network-test/templates/netperf-orchestrator-rc.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../kubernetes_advanced/k8s-testsuite-master/network-test/templates/netperf-orchestrator-svc.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../kubernetes_advanced/k8s-testsuite-master/network-test/templates/netperf-w1-rc.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../kubernetes_advanced/k8s-testsuite-master/network-test/templates/netperf-w2-rc.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../kubernetes_advanced/k8s-testsuite-master/network-test/templates/netperf-w2-svc.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../kubernetes_advanced/k8s-testsuite-master/network-test/templates/netperf-w3-rc.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../kubernetes_advanced/k8s-testsuite-master/network-test/values.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../mongo/mongo_1" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Add_users_certificates" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../AutoScale_influxDB_Kafka" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ConfigMap" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../DaemonSets" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Deployments" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Healthchecks" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HighAvailability.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Kuberenetes_Master_Services" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Minikube" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Networking" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Replication Set" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ResourceQuotas" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ResourceUsagemonitoring" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Run_app_on_k8s" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Scaling PODS" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Secrets_volumes" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Vagrant_box_setup" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../docker_cmds_setup" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ingress_controller" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../k8s_diagnosis" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../kops_cmds-and-setup" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../kubectl_cmds.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../kubectl_cmds.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../kubernetes/k8_class" beforeDir="false" afterPath="$PROJECT_DIR$/../../kubernetes/k8_class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../kubernetes/ubuntu/ubuntu-xenial-16.04-cloudimg-console.log" beforeDir="false" afterPath="$PROJECT_DIR$/../../kubernetes/ubuntu/ubuntu-xenial-16.04-cloudimg-console.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../kubernetes_advanced/k8s_Advanced" beforeDir="false" afterPath="$PROJECT_DIR$/../../kubernetes_advanced/k8s_Advanced" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../kubernetes_advanced/label_script" beforeDir="false" afterPath="$PROJECT_DIR$/../../kubernetes_advanced/label_script" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../labels_nodes" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../load_balancer_set_up_aws" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../namespaces" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../networking k8s_Flannel.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../node_maintenance" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../s3_az_regions" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../secrets_wordpress" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../service_discovery" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../services-kubernetes" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../services-kubernetes.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../user_management" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../volumes" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../volumes_autoprovision" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../web_ui" beforeDir="false" />
+    </list>
+    <ignored path="$PROJECT_DIR$/out/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeInsightWorkspaceSettings">
+    <option name="optimizeImportsOnTheFly" value="true" />
+  </component>
+  <component name="FUSProjectUsageTrigger">
+    <session id="111075697">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.closed" value="1" />
+          <entry key="project.open.time.3" value="1" />
+          <entry key="project.opened" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="py" value="2" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="Python" value="2" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="py" value="516" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="Python" value="516" />
+        </counts>
+      </usages-collector>
+    </session>
+  </component>
+  <component name="FileEditorManager">
+    <leaf />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/mileage_convertor.py" />
+        <option value="$PROJECT_DIR$/PythonBootNotes.py/variables.py" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="x" value="10" />
+    <option name="y" value="123" />
+    <option name="width" value="1207" />
+    <option name="height" value="574" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="mileage_convertor.py" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Python_bootcamp" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1552885619904" />
+    <property name="project.structure.last.edited" value="SDKs" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.appearance" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Python.variables">
+    <configuration name="mileage_convertor" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="mileage_convertor.py" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/mileage_convertor.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="variables" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="mileage_convertor.py" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/PythonBootNotes.py" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/PythonBootNotes.py/variables.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Python.mileage_convertor" />
+      <item itemvalue="Python.variables" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.variables" />
+        <item itemvalue="Python.mileage_convertor" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="daa81fc1-67d8-4557-9bac-c2542a8439d6" name="Default Changelist" comment="" />
+      <created>1552882557198</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1552882557198</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="10" y="123" width="1207" height="574" extended-state="0" />
+    <layout>
+      <window_info id="Image Layers" />
+      <window_info id="Designer" />
+      <window_info id="UI Designer" />
+      <window_info id="Capture Tool" />
+      <window_info id="Favorites" side_tool="true" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24892704" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Version Control" order="0" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Terminal" order="1" />
+      <window_info anchor="bottom" id="Event Log" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="3" />
+      <window_info anchor="bottom" id="Find" order="4" />
+      <window_info anchor="bottom" id="Debug" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="6" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="7" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="8" />
+      <window_info anchor="right" id="Palette" order="0" />
+      <window_info anchor="right" id="Theme Preview" order="1" />
+      <window_info anchor="right" id="Capture Analysis" order="2" />
+      <window_info anchor="right" id="Palette&#9;" order="3" />
+      <window_info anchor="right" id="Maven Projects" order="4" />
+      <window_info anchor="right" id="Commander" order="5" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="6" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="7" weight="0.25" />
+      <window_info anchor="right" id="Run" order="8" weight="0.24892704" />
+    </layout>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/PythonBootNotes.py/variables.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" selection-start-line="1" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mileage_convertor.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>Python 3.6 (python3.6)</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>

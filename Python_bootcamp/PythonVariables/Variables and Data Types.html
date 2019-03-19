@@ -1,0 +1,805 @@
+<!DOCTYPE html>
+<html class="sl-root decks show " data-account="" >
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+
+    <title>Variables and Data Types</title>
+    <meta name="description" content="A presentation created with Slides." />
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+    <meta property="og:title" content="Variables and Data Types" />
+    <meta property="og:description" content="A presentation created with Slides." />
+    <meta property="og:site_name" content="Slides" />
+    <meta property="og:image" content="https://s3.amazonaws.com/media-p.slid.es/thumbnails/24d7a904fbe760e60b0fef26c62dcec3/thumb.jpg?1512082676" />
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="http://python.slides.com/colt/oop-21" />
+    <meta property="fb:app_id" content="146002942236376" />
+
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="msapplication-tap-highlight" content="no" />
+
+    <link rel="manifest" href="/manifest.json">
+
+    <link href="//fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,600,700&subset=latin,cyrillic-ext,greek-ext,greek,latin-ext,cyrillic" rel="stylesheet" type="text/css" data-application-font="opensans">
+
+    <link rel="stylesheet" media="all" href="//assets.slid.es/assets/slides/slides-8a5ab5ebb84fcd5a99a8c73434bd36b521c6571e2121184c32e4742d26106c14.css" />
+    <link rel="stylesheet" media="all" href="//assets.slid.es/assets/application-d6de3fda85e3c81f51252b5c240e0bfe9eeeeeba340428aa0f714a20ed04949e.css" />
+    	<link rel="stylesheet" media="all" href="//assets.slid.es/assets/deck-v2-6d64b451cffaa02748feee4faa884354bbecf2793798fc4f8ed228bcda93d996.css" />
+
+<style id="global-css-output" type="text/css"></style>
+
+<style id="theme-css-output" type="text/css">@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,700');
+@import url('https://fonts.googleapis.com/css?family=Oswald:300,400,700');
+.reveal {
+  
+
+  
+
+}
+.reveal .slides {
+  font-family: 'Open Sans';
+}
+.reveal .slides h1,
+.reveal .slides h2,
+.reveal .slides h3 {
+  font-family: "Oswald";
+  font-weight: 300;
+}
+</style>
+
+<style id="user-css-output" type="text/css">@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,700');
+@import url('https://fonts.googleapis.com/css?family=Oswald:300,400,700');
+.reveal {
+  
+
+  
+
+}
+.reveal .progress span {
+  background: #ff0000;
+}
+.reveal .slides {
+  font-family: 'Open Sans';
+}
+.reveal .slides h1,
+.reveal .slides h2,
+.reveal .slides h3 {
+  font-family: "Oswald";
+  font-weight: 300;
+}
+</style>
+
+    <meta name="csrf-param" content="authenticity_token" />
+<meta name="csrf-token" content="0pCb58ZPWhHHnj+lThvhsL0fCqIQ/ZzzpBi3cNBSPAnfK4oWDbu+M91W+M+ZYcXe7iLaylUf9/XZmhqwq0Xuow==" />
+    <script type="text/javascript">
+  if( !/dnt=1/.test( window.location.search ) ) {
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-39670045-1', 'auto');
+    ga('send', 'pageview');
+
+  }
+</script>
+    <!--[if lt IE 9]>
+    <script src="//assets.slid.es/assets/html5shiv-0bfa553ebc9c42abf66248f2f3feba0935da70b430bace410f80b72729c14820.js"></script>
+<![endif]-->
+    	<meta name="twitter:card" content="summary_large_image">
+	<meta name="twitter:site" content="@Slides">
+	<meta name="twitter:title" content="Variables and Data Types">
+	<meta name="twitter:description" content="An presentation created with Slides.">
+	<meta name="twitter:image" content="https://s3.amazonaws.com/media-p.slid.es/thumbnails/24d7a904fbe760e60b0fef26c62dcec3/thumb.jpg?1512082676">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+  </head>
+  <body>
+    
+    <div id="container" class="container">
+      <header class="global-header show-on-scroll">
+  <div class="wrapper">
+    <h1 class="logo-image-or-text">
+      <a href="/">
+        Python
+      </a>
+    </h1>
+    <ul class="nav">
+
+        <li class="nav-item">
+          <a class="nav-item-anchor" href="/users/sign_in">
+            <span class="nav-item-label">Log in</span>
+          </a>
+        </li>
+
+    </ul>
+  </div>
+</header>
+
+      
+      <div id="main" class="main " role="main">
+        
+
+
+
+
+
+
+
+<div class="marquee">
+
+	<div class="reveal-frame">
+		<div class="reveal-viewport theme-font-overpass2 theme-color-white-blue">
+			<div class="reveal">
+				<div class="slides">
+					<section data-id="94c5d16334db5dd2f164cb961b7660cc"><div class="sl-block" data-block-type="text" style="width: 806px; left: 80px; top: 55px; height: auto;" data-block-id="c84cfd3c4cfba49bb32e152cdba6f12a"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 10; color: rgb(63, 81, 181); line-height: 1.183;" data-has-line-height="">
+<h1>
+<span style="color:#009688"><span style="font-size:4.0em">Numbers </span></span><span style="color:#8bc34a"><span style="font-size:4.0em">and</span></span><span style="color:#009688"><span style="font-size:4.0em"> Math</span></span>
+</h1>
+</div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; min-width: 30px; min-height: 30px; width: 748px; left: 109px; top: 508px;" data-block-id="2ebbd4538678e2dfd927eb236789101a"><div class="sl-block-content fragment" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 11;" data-fragment-index="0">
+<p><span style="color:#3f51b5"><span style="font-size:1.8em">What an exciting combination!</span></span></p>
+</div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; min-width: 30px; min-height: 30px; width: 145px; left: 408px; top: 579px;" data-block-id="b089367c3b2de4a957be590b9d65dfab"><div class="sl-block-content fragment" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 12;" data-fragment-index="1">
+<p><span style="font-size:2.0em">😴</span></p>
+</div></div></section><section data-id="67c2306379697fdceb134cd693d42fa1"><div class="sl-block" data-block-type="text" style="width: 806px; left: 80px; top: 101px; height: auto;" data-block-id="0308e56749190239c5bb14ea4afbd172"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 11;">
+<h1><span style="color:#009688"><span style="font-size:2.5em">Objectives</span></span></h1>
+</div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; min-width: 30px; min-height: 30px; width: 723px; left: 151px; top: 280px;" data-block-id="210669cfa3b2bdf38c39a46c3da5541a"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 12;">
+<ul>
+	<li><span style="font-size:1.4em">Understand the differences between ints and floats</span></li>
+	<li><span style="font-size:1.4em">Work with simple <span style="color:#8bc34a">(and some weird) </span>mathematical operators</span></li>
+	<li><span style="font-size:1.4em">Add comments to your code <span style="color:#8bc34a">(completely unrelated, but it has to go somewhere!)</span></span></li>
+</ul>
+</div></div></section><section data-id="af5963a7365a13df2ec3064c2080301e"><div class="sl-block" data-block-type="text" style="width: 806px; left: 77px; top: 141px; height: auto;" data-block-id="2a730bd6dafec8fbdf4e6715195c8c56"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 11; color: rgb(63, 81, 181);">
+<h1><span style="color:#009688"><span style="font-size:1.6em">Numbers and Math</span></span></h1>
+</div></div>
+<div class="sl-block" data-block-type="table" style="height: auto; min-width: 120px; min-height: 30px; width: 560px; left: 201px; top: 316px;" data-block-id="7068651ae6504852a81cbca0b6425099"><div class="sl-block-style" style="z-index: 12;"><div class="sl-block-content" style="z-index: 12; background-color: rgb(255, 255, 255); color: rgb(0, 0, 0); font-size: 118%;" data-table-rows="4" data-table-cols="2" data-table-border-width="4px" data-table-border-color="rgb(0, 0, 0)" data-table-padding="7px"><table><tbody>
+<tr>
+<th style="border-width: 4px; border-color: rgb(0, 0, 0); padding: 7px;">Integer</th>
+<th style="border-width: 4px; border-color: rgb(0, 0, 0); padding: 7px;">Floating Point</th>
+</tr>
+<tr>
+<td style="border-width: 4px; border-color: rgb(0, 0, 0); padding: 7px;">4</td>
+<td style="border-width: 4px; border-color: rgb(0, 0, 0); padding: 7px;">6.1</td>
+</tr>
+<tr>
+<td style="border-width: 4px; border-color: rgb(0, 0, 0); padding: 7px;">57</td>
+<td style="border-width: 4px; border-color: rgb(0, 0, 0); padding: 7px;">1.3333</td>
+</tr>
+<tr>
+<td style="border-width: 4px; border-color: rgb(0, 0, 0); padding: 7px;">-10</td>
+<td style="border-width: 4px; border-color: rgb(0, 0, 0); padding: 7px;">0.0</td>
+</tr>
+</tbody></table></div></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; min-width: 30px; min-height: 30px; width: 600px; left: 180px; top: 254px;" data-block-id="6f4db6df13ba8e84e3b300d25c21ee92"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 13;">
+<p><span style="color:#8bc34a"><span style="font-size:1.2em">Two main types of numbers:</span></span></p>
+</div></div></section><section data-id="0e8659f76c804321371b86a95e5d381f"><div class="sl-block" data-block-type="text" style="height: auto; min-width: 30px; min-height: 30px; width: 775px; left: 105px; top: 63px;" data-block-id="2880297728a47e586ca5218983f0ffa5"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 11;">
+<h1><span style="font-size:1.8em"><span style="color:#3f51b5">PYTHON ISN'T JUST A </span><span style="color:#03a9f4">GLORIFIED CALCULATOR</span></span></h1>
+</div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; min-width: 30px; min-height: 30px; width: 600px; left: 180px; top: 291px;" data-block-id="9b835378f96af11025e2f97fa2406d68"><div class="sl-block-content fragment" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 12;" data-fragment-index="0">
+<p><span style="color:#3f51b5"><span style="font-size:1.4em">(But you can use it as one)</span></span></p>
+</div></div>
+<div class="sl-block" data-block-type="code" style="min-width: 30px; min-height: 30px; width: 170px; height: 76px; left: 395px; top: 362px;" data-block-id="00214cd0c00096a5564ec4e924b7d8ea"><div class="sl-block-content fragment" data-highlight-theme="solarized-dark" style="z-index: 13; font-size: 315%;" data-fragment-index="1"><pre class="python"><code>1 + 1</code></pre></div></div>
+<div class="sl-block" data-block-type="code" style="min-width: 30px; min-height: 30px; width: 170px; height: 76px; left: 395px; top: 477px;" data-block-id="944d260410a612f15a04616cb9164970"><div class="sl-block-content fragment" data-highlight-theme="solarized-dark" style="z-index: 14; font-size: 315%;" data-fragment-index="2"><pre class="python"><code>5 - 3</code></pre></div></div>
+<div class="sl-block" data-block-type="code" style="min-width: 30px; min-height: 30px; width: 286px; height: 76px; left: 337px; top: 592px;" data-block-id="c66c312689b07ce2a0d0af169d632fcd"><div class="sl-block-content fragment" data-highlight-theme="solarized-dark" style="z-index: 15; font-size: 315%;" data-fragment-index="3"><pre class="python"><code>1 + 4 - 2</code></pre></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; min-width: 30px; min-height: 30px; width: 229px; left: 126px; top: 595px;" data-block-id="06b15edbaf8e6a19b065e4600a7c0b86"><div class="sl-block-style" style="z-index: 16; transform: rotate(325deg);"><div class="sl-block-content fragment" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 16;" data-fragment-index="3">
+<p>getting tricky!</p>
+</div></div></div></section><section data-id="d69c0f9085d6c26b866fc140447e834f">
+<div class="sl-block" data-block-type="text" style="width: 806px; left: 77px; top: 70px; height: auto;" data-block-id="83607ebf8ebe61c1d1b4287a6fe75508"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 10; color: rgb(63, 81, 181);">
+<h1><span style="color:#009688"><span style="font-size:1.6em">Numbers and Math</span></span></h1>
+</div></div>
+<div class="sl-block" data-block-type="table" style="height: auto; min-width: 120px; min-height: 30px; width: 560px; left: 200px; top: 243px;" data-block-id="54d0a77a92002421b4a13f503a692915"><div class="sl-block-style" style="z-index: 11;"><div class="sl-block-content" style="z-index: 11; background-color: rgb(255, 255, 255); color: rgb(0, 0, 0); font-size: 108%; text-align: center;" data-table-rows="8" data-table-cols="2" data-table-border-width="3px" data-table-border-color="rgb(0, 0, 0)" data-table-padding="3px"><table><tbody>
+<tr>
+<th style="border-width: 3px; border-color: rgb(0, 0, 0); padding: 3px;">Symbol</th>
+<th style="border-width: 3px; border-color: rgb(0, 0, 0); padding: 3px;">Name</th>
+</tr>
+<tr>
+<td style="border-width: 3px; border-color: rgb(0, 0, 0); padding: 3px;">+</td>
+<td style="border-width: 3px; border-color: rgb(0, 0, 0); padding: 3px;">Addition</td>
+</tr>
+<tr>
+<td style="border-width: 3px; border-color: rgb(0, 0, 0); padding: 3px;">-</td>
+<td style="border-width: 3px; border-color: rgb(0, 0, 0); padding: 3px;">Subtraction</td>
+</tr>
+<tr>
+<td style="border-width: 3px; border-color: rgb(0, 0, 0); padding: 3px;">*</td>
+<td style="border-width: 3px; border-color: rgb(0, 0, 0); padding: 3px;">Multiplication</td>
+</tr>
+<tr>
+<td style="padding: 3px; border-width: 3px; border-color: rgb(0, 0, 0);">/</td>
+<td style="padding: 3px; border-width: 3px; border-color: rgb(0, 0, 0);">Division</td>
+</tr>
+<tr>
+<td style="padding: 3px; border-width: 3px; border-color: rgb(0, 0, 0);">**</td>
+<td style="padding: 3px; border-width: 3px; border-color: rgb(0, 0, 0);">Exponentiation</td>
+</tr>
+<tr>
+<td style="padding: 3px; border-width: 3px; border-color: rgb(0, 0, 0);">%</td>
+<td style="padding: 3px; border-width: 3px; border-color: rgb(0, 0, 0);">Modulo</td>
+</tr>
+<tr>
+<td style="padding: 3px; border-width: 3px; border-color: rgb(0, 0, 0);">//</td>
+<td style="padding: 3px; border-width: 3px; border-color: rgb(0, 0, 0);">Integer Division</td>
+</tr>
+</tbody></table></div></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; min-width: 30px; min-height: 30px; width: 600px; left: 180px; top: 171px;" data-block-id="2fdf2ba478d72a9b1f9bc36f30fdb6c7"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 12;">
+<p><span style="color:#8bc34a"><span style="font-size:33.6px">commonly used math operators</span></span></p>
+</div></div>
+<div class="sl-block" data-block-type="shape" style="min-width: 4px; min-height: 4px; width: 560px; height: 159px; left: 200px; top: 477px;" data-block-id="a6c2497f8c831e209d5eec123269a004"><div class="sl-block-content fragment" data-shape-type="rect" data-shape-fill-color="rgba(63, 81, 181, 0)" data-shape-stretch="true" style="z-index: 13;" data-shape-stroke-color="#00bcd4" data-shape-stroke-width="8" data-fragment-index="0"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveaspectratio="none" viewbox="0 0 560 159"><defs><clippath id="shape-mask-1-1517816364579"><rect width="560" height="159"></rect></clippath></defs><rect width="560" height="159" clip-path="url(#shape-mask-1-1517816364579)" class="shape-element" fill="rgba(63, 81, 181, 0)" stroke="#00bcd4" stroke-width="16"></rect></svg></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; min-width: 30px; min-height: 30px; width: 600px; left: -181px; top: 490px;" data-block-id="617f1f77368c1f38deecd338cfec1dc2"><div class="sl-block-content fragment" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 14;" data-fragment-index="1">
+<p>WHAT </p>
+</div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; min-width: 30px; min-height: 30px; width: 600px; left: -181px; top: 527px;" data-block-id="dd285b88cb6d0e9e133ccd31296f1f76"><div class="sl-block-content fragment" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 16;" data-fragment-index="1">
+<p><span style="font-size:2.0em">🤷‍♂️</span></p>
+</div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; min-width: 30px; min-height: 30px; width: 600px; left: 536px; top: 527px;" data-block-id="385814507dfd1ea6586078c441964965"><div class="sl-block-content fragment" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 17;" data-fragment-index="1">
+<p><span style="font-size:2.0em">🤷‍♀️</span></p>
+</div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; min-width: 30px; min-height: 30px; width: 600px; left: 536px; top: 491px;" data-block-id="e76a93d600d11b2a7a70dfaca3c9ff52"><div class="sl-block-content fragment" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 18;" data-fragment-index="1">
+<p>WHAT </p>
+</div></div></section><section data-id="db124c7bc19251ff86db81dea8676ec8"><div class="sl-block" data-block-type="text" style="height: auto; min-width: 30px; min-height: 30px; width: 600px; left: 180px; top: 39px;" data-block-id="350d5588053b42d9ab94de014370c7dc"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 11; line-height: 1.17;" data-has-line-height="">
+<h1>
+<span style="color:#3f51b5"><span style="font-size:5.0em">QUIZ</span></span><span style="color:#f44336"><span style="font-size:5.0em"> </span></span><span style="color:#00bcd4"><span style="font-size:5.0em">TIME</span></span>
+</h1>
+</div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; min-width: 30px; min-height: 30px; width: 600px; left: 180px; top: 602px;" data-block-id="1afe85942732b94e972a1163ac187154"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 12;">
+<p>It's super quick, I promise</p>
+</div></div></section><section data-id="a5e0f8faf048af333db13480bc9778db"><div class="sl-block" data-block-type="text" style="width: 867px; left: 47px; top: 197px; height: auto;" data-block-id="c7775cd68780f8ca37ffbfe8c2fa899a"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 10;">
+<h1><span style="color:#009688"><span style="font-size:4.0em">COMMENTS</span></span></h1>
+</div></div></section><section data-id="1be8901b84185eb2824bf9bc1865f2ad"><div class="sl-block" data-block-type="text" style="height: auto; min-width: 30px; min-height: 30px; width: 863px; left: 49px; top: 128px;" data-block-id="74c7d8ad9d0e177620c5fe1a6e8701bd"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 11; line-height: 1.105;" data-has-line-height="">
+<h1><span style="color:#009688"><span style="font-size:4.0em">NEXT UP:</span></span></h1>
+
+<h1><span style="color:#8bc34a"><span style="font-size:4.0em">VARIABLES</span></span></h1>
+</div></div></section><section data-id="c1abf5caacf85bb72326f71602730ff6"><div class="sl-block" data-block-type="text" style="height: auto; min-width: 30px; min-height: 30px; width: 800px; left: 80px; top: 70px;" data-block-id="ded8ed6386026aa241af3d0c58a37d72"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 11; font-size: 178%; color: rgb(0, 188, 212); border-width: 1px; line-height: 1.092;" data-has-line-height="">
+<h1><span style="font-size:1.8em"><span style="color:#009688">Variables</span></span></h1>
+
+<h1><span style="color:#8bc34a"><span style="font-size:1.8em">and</span></span></h1>
+
+<h1><span style="font-size:1.8em"><span style="color:#009688">Data types</span></span></h1>
+</div></div>
+
+<div class="sl-block" data-block-type="text" style="height: auto; min-width: 30px; min-height: 30px; width: 600px; left: 180px; top: 630px;" data-block-id="3479b517e1343a1ea914df87d2bf5003"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 12;">
+<p><span style="color:#8bc34a">(mostly strings for now)</span></p>
+</div></div></section><section data-id="72613d6df272169fe58eec642f696f0a"><div class="sl-block" data-block-type="text" style="width: 808px; left: 76px; top: 49px; height: auto;" data-block-id="869bd51abc3d366cf064d84e9f166617"><div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Title Text" style="z-index: 10; font-size: 180%; color: rgb(0, 150, 136);">
+<h1><span style="font-size:1.6em">Objectives</span></h1>
+</div></div>
+<div class="sl-block" data-block-type="text" style="width: 640px; left: 160px; top: 240px; height: auto;" data-block-id="97f90bad5c04f6708a8a7fec13eca365"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 11; text-align: left;">
+<ul>
+	<li class="fragment" data-fragment-index="0">Understand how to assign and use variables</li>
+	<li class="fragment" data-fragment-index="1">Learn Python variable naming restrictions and conventions</li>
+	<li class="fragment" data-fragment-index="2">Learn and use some of the different data types available in Python</li>
+	<li class="fragment" data-fragment-index="3">Learn why Python is called a dynamically-typed language</li>
+	<li class="fragment" data-fragment-index="4">Understand how to convert data types</li>
+	<li class="fragment" data-fragment-index="5">Learn the ins and outs of Strings!</li>
+	<li class="fragment" data-fragment-index="6">Build a silly little program that gets user input</li>
+</ul>
+</div></div>
+
+</section><section data-id="969eaa8b1383e20a92083cb7e545cc17">
+<div class="sl-block" data-block-type="text" style="width: 773px; left: 80px; top: 208px; height: auto;" data-block-id="e56b41291d57b141ac46100140c89d01"><div class="sl-block-style" style="z-index: 10;"><div class="sl-block-content fragment" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 10;" data-fragment-index="0" dir="ui">
+<p>A variable in Python is like a variable in mathematics: it is a named symbol that holds a value.</p>
+</div></div></div>
+<div class="sl-block" data-block-type="text" data-block-id="95f8f3669317438936a7e4c1fbd4c7fb" style="height: auto; min-width: 30px; min-height: 30px; width: 760px; left: 100px; top: 70px;"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 11; font-size: 180%; color: rgb(0, 150, 136);" dir="ui">
+<h1>VARIABLE ASSIGNMENT</h1>
+</div></div>
+
+<div class="sl-block" data-block-type="code" data-block-id="bfb9e9bc59b09ece01a9dbd59cb415b9" style="min-width: 30px; min-height: 30px; width: 480px; height: 60px; left: 240px; top: 319px;"><div class="sl-block-content fragment" data-highlight-theme="solarized-light" style="z-index: 12; font-size: 135%;" data-fragment-index="1"><pre class="python"><code>x = 100
+khaleesi_mother_of_dragons = 1</code></pre></div></div>
+<div class="sl-block" data-block-type="code" style="min-width: 30px; min-height: 30px; width: 480px; height: 34px; left: 240px; top: 412px;" data-block-id="f57a08ddbf55581a98be9acdfcb3bc25"><div class="sl-block-content fragment" data-highlight-theme="solarized-light" style="z-index: 14; font-size: 135%;" data-fragment-index="3"><pre class="python"><code>101</code></pre></div></div>
+<div class="sl-block" data-block-type="text" style="width: 888px; left: 36px; top: 480px; height: auto;" data-block-id="1ebed1b41ec24d863409585287dc806c"><div class="sl-block-style" style="z-index: 15;"><div class="sl-block-content fragment" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 15;" data-fragment-index="4" dir="ui">
+<p>Variables are always <strong>assigned</strong> with the variable name on the left and the value on the right of the equals sign.</p>
+</div></div></div>
+<div class="sl-block" data-block-type="text" style="width: 903px; left: 15px; top: 594px; height: auto;" data-block-id="13dc99aa9b37a77ebe1ee2e1e4382df4"><div class="sl-block-style" style="z-index: 16;"><div class="sl-block-content fragment" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 16;" data-fragment-index="5">
+<p>Variables must be assigned before they can be used.</p>
+</div></div></div>
+<div class="sl-block" data-block-type="code" style="min-width: 30px; min-height: 30px; width: 480px; height: 42px; left: 240px; top: 379px;" data-block-id="81d3ad83ea1dccb20991e0ae8e7468fd"><div class="sl-block-content fragment" data-highlight-theme="solarized-light" style="z-index: 17; font-size: 135%;" data-fragment-index="2"><pre class="python"><code>print(khaleesi_mother_of_dragons + x)</code></pre></div></div></section><section data-id="8efa5a4eb8ad40a21677a80ca5aa5c59">
+<div class="sl-block" data-block-type="text" style="width: 800px; left: 80px; top: 210px; height: auto;" data-block-id="2e745871f0a63fc1d221e6c813b90539"><div class="sl-block-style" style="z-index: 10;"><div class="sl-block-content fragment" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 10;" data-fragment-index="0">
+<p>Variables can be:</p>
+</div></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 800px; left: 441px; top: 146px;" data-block-id="e642e949b3cf006e7209548e7ce3b73a"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 11; font-size: 180%; color: rgb(0, 150, 136);" dir="ui">
+<p><span style="font-size:0.5em">(continued)</span></p>
+</div></div>
+
+<div class="sl-block" data-block-type="code" style="width: 543px; height: 37px; left: 240px; top: 437px;" data-block-id="1647d8c7eb3766733b7b2d7c2ed38ffa"><div class="sl-block-content fragment" data-highlight-theme="solarized-light" style="z-index: 13; font-size: 135%;" data-fragment-index="2"><pre class="python"><code>python_is_awesome = 100</code></pre></div></div>
+
+<div class="sl-block" data-block-type="code" style="width: 541px; height: 45px; left: 242px; top: 474px;" data-block-id="63ddc7c76728311d21b84472d978b8e9"><div class="sl-block-content fragment" data-highlight-theme="solarized-light" style="z-index: 14; font-size: 135%;" data-fragment-index="2"><pre class="python"><code>just_another_var = python_is_awesome  </code></pre></div></div>
+<div class="sl-block" data-block-type="text" style="width: 401px; left: 240px; top: 271px; height: auto;" data-block-id="1de676af49d5562a145a834eed248152"><div class="sl-block-style" style="z-index: 15;"><div class="sl-block-content fragment" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 15; text-align: left;" data-fragment-index="1">
+<ul>
+	<li>assigned to other variables</li>
+</ul>
+</div></div></div>
+<div class="sl-block" data-block-type="text" style="width: 401px; left: 240px; top: 313px; height: auto;" data-block-id="3a2fa6b616a88b76fa697f5f9a666fd7"><div class="sl-block-style" style="z-index: 16;"><div class="sl-block-content fragment" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 16; text-align: left;" data-fragment-index="3">
+<ul>
+	<li>reassigned at any time</li>
+</ul>
+</div></div></div>
+<div class="sl-block" data-block-type="code" style="width: 541px; height: 37px; left: 242px; top: 511px;" data-block-id="83253f7243524fea5f395423aa0c3d09"><div class="sl-block-content fragment" data-highlight-theme="solarized-light" style="z-index: 17; font-size: 135%;" data-fragment-index="4"><pre class="python"><code>python_is_awesome = 1337</code></pre></div></div>
+<div class="sl-block" data-block-type="text" style="width: 650px; left: 240px; top: 358px; height: auto;" data-block-id="a496f1312328d0ff4f8fd47732426e4e"><div class="sl-block-style" style="z-index: 18;"><div class="sl-block-content fragment" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 18; text-align: left;" data-fragment-index="5">
+<ul>
+	<li>assigned at the same time as other variables</li>
+</ul>
+</div></div></div>
+<div class="sl-block" data-block-type="code" style="width: 541px; height: 37px; left: 242px; top: 548px;" data-block-id="0854b07386b5ec152033570bf94f33d9"><div class="sl-block-content fragment" data-highlight-theme="solarized-light" style="z-index: 19; font-size: 135%;" data-fragment-index="6"><pre class="python"><code>all, at, once = 5, 10, 15</code></pre></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; min-width: 30px; min-height: 30px; width: 760px; left: 100px; top: 64px;" data-block-id="f6f043bad26106e331d437735cc2f93e"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 20; font-size: 180%; color: rgb(0, 150, 136);" dir="ui">
+<h1>VARIABLE ASSIGNMENT</h1>
+</div></div></section><section data-id="ade75ef029ecaaa49c0681baeb55bf91">
+<div class="sl-block" data-block-type="text" style="width: 912px; left: 8px; top: 174px; height: auto;" data-block-id="91b1d4bd7308fe9a9cc1c6b50e9761f0"><div class="sl-block-style" style="z-index: 10;"><div class="sl-block-content fragment" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 10;" data-fragment-index="0">
+<p>In Python, you can name your variables whatever you want, with some restrictions:</p>
+</div></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 800px; left: 80px; top: 75px;" data-block-id="60664ca714fcb097d7868db52b098de4"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 12; font-size: 180%; color: rgb(0, 150, 136);" dir="ui">
+<p>Naming Restrictions</p>
+</div></div>
+
+
+
+<div class="sl-block" data-block-type="text" data-block-id="974b3c9568dc9ee6bbd838cec83a272e" style="height: auto; min-width: 30px; min-height: 30px; width: 960px; left: 0px; top: 295px;"><div class="sl-block-content fragment" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 13; text-align: center;" data-fragment-index="1">
+<p>1. Variables must start with a letter or underscore</p>
+</div></div>
+<div class="sl-block" data-block-type="text" data-block-id="f4372b32f1a2c6433d2a2ce0bc83c0a9" style="height: auto; min-width: 30px; min-height: 30px; width: 84px; left: 299px; top: 349px;"><div class="sl-block-content fragment" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 14; color: rgb(0, 0, 0); text-align: left;" data-fragment-index="2">
+<pre>_cats</pre>
+</div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; min-width: 30px; min-height: 30px; width: 92px; left: 477px; top: 349px;" data-block-id="9c217c6925020ea04b009e6eca7b5841"><div class="sl-block-content fragment" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 15; color: rgb(244, 67, 54); text-align: left;" data-fragment-index="3">
+<pre>2cats</pre>
+</div></div>
+<div class="sl-block" data-block-type="shape" data-block-id="525c596eb3d8d164ff3ef158b30847d9" style="min-width: 4px; min-height: 4px; width: 27px; height: 26px; left: 393px; top: 353px;"><div class="sl-block-style" style="z-index: 16;"><div class="sl-block-content fragment" data-shape-type="symbol-checkmark-circle" data-shape-fill-color="rgb(76, 175, 80)" data-shape-stretch="true" style="z-index: 16;" data-fragment-index="2"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveaspectratio="none" viewbox="0 0 32 32"><g class="shape-element" fill="rgb(76, 175, 80)"><path d="M16 0c-8.836 0-16 7.164-16 16s7.164 16 16 16 16-7.164 16-16-7.164-16-16-16zM13.52 23.383l-7.362-7.363 2.828-2.828 4.533 4.535 9.617-9.617 2.828 2.828-12.444 12.445z"></path></g></svg></div></div></div>
+<div class="sl-block" data-block-type="shape" data-block-id="4442573b29cecaa93f78a23dcbca3d1a" style="min-width: 4px; min-height: 4px; width: 25px; height: 26px; left: 569px; top: 353px;"><div class="sl-block-content fragment" data-shape-type="symbol-x-circle" data-shape-fill-color="rgb(244, 67, 54)" data-shape-stretch="true" style="z-index: 17;" data-fragment-index="3"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveaspectratio="none" viewbox="0 0 32 32"><g class="shape-element" fill="rgb(244, 67, 54)"><path d="M16 0c-8.836 0-16 7.164-16 16s7.164 16 16 16 16-7.164 16-16-7.164-16-16-16zM23.914 21.086l-2.828 2.828-5.086-5.086-5.086 5.086-2.828-2.828 5.086-5.086-5.086-5.086 2.828-2.828 5.086 5.086 5.086-5.086 2.828 2.828-5.086 5.086 5.086 5.086z"></path></g></svg></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; min-width: 30px; min-height: 30px; width: 959px; left: 0px; top: 420px;" data-block-id="21aa465468e9cd9165cae2b0b6d59487"><div class="sl-block-content fragment" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 18; text-align: center; line-height: 1.287; font-size: 93%;" data-has-line-height="" data-fragment-index="4">
+<p>2. The rest of the name must consist of letters, numbers, or underscores</p>
+</div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; min-width: 30px; min-height: 30px; width: 88px; left: 298px; top: 468px;" data-block-id="4974fe9fd7a6b19eba1904b017fe67ba"><div class="sl-block-content fragment" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 19; color: rgb(0, 0, 0); text-align: left;" data-fragment-index="5">
+<pre>cats2</pre>
+</div></div>
+<div class="sl-block" data-block-type="shape" style="min-width: 4px; min-height: 4px; width: 27px; height: 26px; left: 392px; top: 471px;" data-block-id="4c5930b7fddca9c988a37ee70ff0f754"><div class="sl-block-content fragment" data-shape-type="symbol-checkmark-circle" data-shape-fill-color="rgb(76, 175, 80)" data-shape-stretch="true" style="z-index: 20;" data-fragment-index="5"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveaspectratio="none" viewbox="0 0 32 32"><g class="shape-element" fill="rgb(76, 175, 80)"><path d="M16 0c-8.836 0-16 7.164-16 16s7.164 16 16 16 16-7.164 16-16-7.164-16-16-16zM13.52 23.383l-7.362-7.363 2.828-2.828 4.533 4.535 9.617-9.617 2.828 2.828-12.444 12.445z"></path></g></svg></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; min-width: 30px; min-height: 30px; width: 119px; left: 480px; top: 468px;" data-block-id="c7cbb84d721863a7fd9b6be6cb028a74"><div class="sl-block-content fragment" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 21; color: rgb(244, 67, 54);" data-fragment-index="6">
+<pre>hey@you</pre>
+</div></div>
+<div class="sl-block" data-block-type="shape" style="min-width: 4px; min-height: 4px; width: 25px; height: 26px; left: 605px; top: 471px;" data-block-id="09e8832d597ba4dce03999648c221b8c"><div class="sl-block-content fragment" data-shape-type="symbol-x-circle" data-shape-fill-color="rgb(244, 67, 54)" data-shape-stretch="true" style="z-index: 22;" data-fragment-index="6"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveaspectratio="none" viewbox="0 0 32 32"><g class="shape-element" fill="rgb(244, 67, 54)"><path d="M16 0c-8.836 0-16 7.164-16 16s7.164 16 16 16 16-7.164 16-16-7.164-16-16-16zM23.914 21.086l-2.828 2.828-5.086-5.086-5.086 5.086-2.828-2.828 5.086-5.086-5.086-5.086 2.828-2.828 5.086 5.086 5.086-5.086 2.828 2.828-5.086 5.086 5.086 5.086z"></path></g></svg></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; min-width: 30px; min-height: 30px; width: 959px; left: 1px; top: 547px;" data-block-id="57ec22b98b3991c5d13e5e54bcebfca9"><div class="sl-block-content fragment" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 23; text-align: center; line-height: 1.287; font-size: 93%;" data-has-line-height="" data-fragment-index="7">
+<p>3. Names are case-sensitive</p>
+</div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; min-width: 30px; min-height: 30px; width: 217px; left: 240px; top: 597px;" data-block-id="11832f855810f3c2f56c1f747089a3de"><div class="sl-block-content fragment" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 24; color: rgb(0, 0, 0);" data-fragment-index="8">
+<pre>CATS != Cats</pre>
+</div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; min-width: 30px; min-height: 30px; width: 215px; left: 505px; top: 597px;" data-block-id="c3fd20fe57a59f4600f3e9182cab229d"><div class="sl-block-content fragment" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 25; color: rgb(0, 0, 0);" data-fragment-index="8">
+<pre>Cats != cats</pre>
+</div></div></section><section data-id="fc8a74c15d8947fa216f2122e1fd517c">
+<div class="sl-block" data-block-type="text" style="width: 912px; left: 12px; top: 174px; height: auto;" data-block-id="67902923132c4a1791a2b8021b71b480"><div class="sl-block-style" style="z-index: 11;"><div class="sl-block-content fragment" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 11;" data-fragment-index="0">
+<p>Most Python programmers prefer to use standard style conventions when naming things:</p>
+</div></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 800px; left: 80px; top: 75px;" data-block-id="87d2b0692e92e6aa3627dce9203a6a9a"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 12; font-size: 180%; color: rgb(0, 150, 136);" dir="ui">
+<p>Naming Conventions</p>
+</div></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="sl-block" data-block-type="text" style="width: 960px; left: 0px; top: 280px; height: auto;" data-block-id="2cdb94138aa6a272f2a3dd029a2c2181"><div class="sl-block-style" style="z-index: 13;"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 13; text-align: left;">
+<ul>
+	<li class="fragment" data-fragment-index="1">Most variables should be <strong>snake_case</strong> (underscores between words)</li>
+</ul>
+</div></div></div>
+<div class="sl-block" data-block-type="text" style="width: 954px; left: 0px; top: 516px; height: auto;" data-block-id="9c3cc0a5c840b4e8447902f3f5088dd9"><div class="sl-block-style" style="z-index: 14;"><div class="sl-block-content fragment" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 14; text-align: left;" data-fragment-index="5">
+<ul>
+	<li>Variables that start and end with two underscores (called "dunder" for <strong>d</strong>ouble <strong>under</strong>score) are supposed to be private or left alone</li>
+</ul>
+</div></div></div>
+<div class="sl-block" data-block-type="text" style="width: 960px; left: 0px; top: 343px; height: auto;" data-block-id="388441fdc26b0ae8350f9b6c2e407321"><div class="sl-block-style" style="z-index: 15;"><div class="sl-block-content fragment" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 15; text-align: left;" data-fragment-index="2">
+<ul>
+	<li>Most variables should be also be <strong>lowercase</strong>, with some exceptions:</li>
+</ul>
+</div></div></div>
+<div class="sl-block" data-block-type="text" style="width: 822px; left: 80px; top: 454px; height: auto;" data-block-id="1b17c41d314c26ad0c710e565265a12d"><div class="sl-block-style" style="z-index: 16;"><div class="sl-block-content fragment" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 16; text-align: left;" data-fragment-index="4">
+<p><strong>UpperCamelCase</strong> usually refers to a class (more on that later)</p>
+</div></div></div>
+<div class="sl-block" data-block-type="text" style="width: 844px; left: 80px; top: 402px; height: auto;" data-block-id="ae5a42ea936336586c70b9acce0d0d17"><div class="sl-block-style" style="z-index: 17;"><div class="sl-block-content fragment" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 17; text-align: left;" data-fragment-index="3">
+<p><strong>CAPITAL_SNAKE_CASE</strong> usually refers to constants (e.g. PI = 3.14)</p>
+</div></div></div>
+<div class="sl-block" data-block-type="text" data-block-id="675f6e35f57cae5fca8c8edc073796db" style="height: auto; min-width: 30px; min-height: 30px; width: 600px; left: 191px; top: 614px;"><div class="sl-block-content fragment" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 18; text-align: center;" data-fragment-index="6">
+<pre style="text-align:center">__no_touchy__</pre>
+</div></div></section><section data-id="ea685d8602fa9c41e26dfb5c7805aff6">
+<div class="sl-block" data-block-type="text" style="width: 958px; left: 2px; top: 210px; height: auto;" data-block-id="12ceeb83d751d795a25be785893ef177"><div class="sl-block-style" style="z-index: 10;"><div class="sl-block-content fragment" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 10;" data-fragment-index="0">
+<p>In any assignment, the assigned value must always be a valid data type.</p>
+</div></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 800px; left: 81px; top: 62px;" data-block-id="24e8bdfed87dce5d72f1422ab7e90627"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 11; font-size: 180%; color: rgb(0, 150, 136);" dir="ui">
+<h1>Data Types</h1>
+</div></div>
+
+
+
+<div class="sl-block" data-block-type="text" data-block-id="4a275db2ee7ba40053e8334dd8c399f5" style="height: auto; min-width: 30px; min-height: 30px; width: 600px; left: 179px; top: 299px;"><div class="sl-block-content fragment" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 12;" data-fragment-index="1">
+<p>Python data types include:</p>
+</div></div>
+<div class="sl-block" data-block-type="table" data-block-id="b4f784290f8858e9075bfc8669bd381d" style="height: auto; min-width: 120px; min-height: 30px; width: 942px; left: 8px; top: 376px;"><div class="sl-block-content fragment" style="z-index: 14; font-size: 75%; text-align: left;" data-table-rows="6" data-table-cols="2" data-table-has-header="true" data-fragment-index="2"><table><tbody>
+<tr>
+<th style="width: 148px;">data type</th>
+<th>description</th>
+</tr>
+<tr>
+<td style="width: 148px;">bool</td>
+<td>True or False values</td>
+</tr>
+<tr>
+<td style="width: 148px;">int</td>
+<td>an integer (1, 2, 3)</td>
+</tr>
+<tr>
+<td style="width: 148px;">str</td>
+<td>(string) a sequence of Unicode characters, e.g. "Colt" or "程序设计"</td>
+</tr>
+<tr>
+<td style="width: 148px;">list</td>
+<td>an ordered sequence of values of other data types, e.g. [1, 2, 3] or ["a", "b", "c"]</td>
+</tr>
+<tr>
+<td>dict</td>
+<td>a collection of key: values, e.g. { "first_name": "Colt", "last_name": "Steele" }</td>
+</tr>
+</tbody></table></div></div>
+
+<div class="sl-block" data-block-type="text" style="height: auto; min-width: 30px; min-height: 30px; width: 600px; left: 179px; top: 623px;" data-block-id="94aff40934a669686cc50d10be3a6fc5"><div class="sl-block-content fragment" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 15;" data-fragment-index="1">
+<p>Among others!</p>
+</div></div></section><section data-id="9062e4e3b487013dedd7f8002e1b0649">
+<div class="sl-block" data-block-type="text" style="width: 912px; left: 24px; top: 154px; height: auto;" data-block-id="871def357204f595c63fed9f5cc9e456"><div class="sl-block-style" style="z-index: 11;"><div class="sl-block-content fragment" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 11;" data-fragment-index="0">
+<p style="text-align:left">Python is highly flexible about reassigning variables to different types:</p>
+</div></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 800px; left: 80px; top: 75px;" data-block-id="34847530369fcbe5cc7009f6bd1a7f77"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 12; font-size: 180%; color: rgb(0, 150, 136);" dir="ui">
+<p>Dynamic Typing</p>
+</div></div>
+
+
+
+<div class="sl-block" data-block-type="code" data-block-id="2d230a218f2d03577fc632179a7b848a" style="min-width: 30px; min-height: 30px; width: 500px; height: 233px; left: 230px; top: 210px;"><div class="sl-block-content fragment" data-highlight-theme="solarized-light" style="z-index: 13; font-size: 113%;" data-fragment-index="1"><pre class="python"><code>awesomeness = True
+print(awesomeness) # True
+
+awesomeness = "a dog"
+print(awesomeness) # a dog
+
+awesomeness = None
+print(awesomeness) # None
+
+awesomeness = 22 / 7
+print(awesomeness) # 3.142857142857143</code></pre></div></div>
+<div class="sl-block" data-block-type="text" style="width: 912px; left: 30px; top: 463px; height: auto;" data-block-id="af3d48b518765c00e60344b3fef673bb"><div class="sl-block-style" style="z-index: 14;"><div class="sl-block-content fragment" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 14; font-size: 90%; text-align: center;" data-fragment-index="2">
+<p>We call this <strong>dynamic typing</strong>, since variables can change types readily.</p>
+</div></div></div>
+<div class="sl-block" data-block-type="text" style="width: 912px; left: 30px; top: 522px; height: auto;" data-block-id="9bc1b836c8a3bd7346c317cb84f36ba3"><div class="sl-block-style" style="z-index: 15;"><div class="sl-block-content fragment" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 15; text-align: center; font-size: 88%;" data-fragment-index="3">
+<p>Other languages, such as C++, are <strong>statically</strong>-<strong>typed</strong>, and variables are stuck with their originally-assigned type:</p>
+</div></div></div>
+<div class="sl-block" data-block-type="code" data-block-id="ac5fea580c7f8c24d155d0abbc3cc887" style="min-width: 30px; min-height: 30px; width: 500px; height: 60px; left: 240px; top: 611px;"><div class="sl-block-content fragment" data-highlight-theme="solarized-light" style="z-index: 16; font-size: 120%; border-style: solid; border-width: 1px; border-color: rgb(244, 67, 54);" data-fragment-index="4"><pre class="cpp"><code>int not_awesomeness = 5;
+not_awesomeness = "cool"; // !Error</code></pre></div></div></section><section data-id="6ebe1a4202ac6c4557fcb2145c6cf47a"><div class="sl-block" data-block-type="text" style="height: auto; width: 800px; left: 80px; top: 75px;" data-block-id="2a5cf504dcd4a176d861bed796dcf9c0"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 11; font-size: 180%; color: rgb(0, 150, 136);" dir="ui">
+<p>Declaring Strings</p>
+</div></div>
+<div class="sl-block" data-block-type="text" style="width: 794px; left: 80px; top: 174px; height: auto;" data-block-id="ecc7967acd26fd1e5788f59259739ee5"><div class="sl-block-style" style="z-index: 12;"><div class="sl-block-content fragment" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 12;" data-fragment-index="0">
+<p>String literals in Python can be declared with either single or double quotes.</p>
+</div></div></div>
+<div class="sl-block" data-block-type="text" style="width: 794px; left: 80px; top: 454px; height: auto;" data-block-id="ab04ffc4e73d116ddf433d54943f118e"><div class="sl-block-style" style="z-index: 13;"><div class="sl-block-content fragment" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 13;" data-fragment-index="2">
+<p>Either one is perfectly fine; but make sure you stick to the same convention throughout the same file.</p>
+</div></div></div>
+<div class="sl-block" data-block-type="code" style="min-width: 30px; min-height: 30px; width: 500px; height: 60px; left: 227px; top: 320px;" data-block-id="f6c3d343591d1841da0da4ec693d6097"><div class="sl-block-content fragment" data-highlight-theme="solarized-light" style="z-index: 14; font-size: 130%;" data-fragment-index="1"><pre class="python"><code>my_other_str = 'a hat'
+my_str = "a cat"
+</code></pre></div></div></section><section data-id="2ddcc8dd6b2c123e55f56d936dad4114"><div class="sl-block" data-block-type="text" style="height: auto; width: 800px; left: 80px; top: 75px;" data-block-id="49ce2374930a7d448bf11a113dccd06c"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 10; font-size: 180%; color: rgb(0, 150, 136);" dir="ui">
+<p>String Escape Characters</p>
+</div></div>
+<div class="sl-block" data-block-type="text" style="width: 863px; left: 36px; top: 172px; height: auto;" data-block-id="1f4771dd05d95d23eda840aa55dc29f0"><div class="sl-block-style" style="z-index: 11;"><div class="sl-block-content fragment" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 11;" data-fragment-index="0">
+<p>In Python there are also "escape characters", which are "metacharacters" - they get interpreted by Python to do something special:</p>
+</div></div></div>
+<div class="sl-block" data-block-type="code" style="min-width: 30px; min-height: 30px; width: 500px; height: 132px; left: 230px; top: 317px;" data-block-id="26317f6cdfb6b6d655ac11ed00e8f0ee"><div class="sl-block-content fragment" data-highlight-theme="solarized-light" style="z-index: 12; font-size: 130%;" data-fragment-index="1"><pre class="python"><code>new_line = "hello \n world"
+
+print(new_line)
+# hello
+# world</code></pre></div></div>
+<div class="sl-block" data-block-type="text" style="width: 800px; left: 80px; top: 472px; height: auto;" data-block-id="49f8a70604d3394d08ca1954383a9467"><div class="sl-block-style" style="z-index: 14;"><div class="sl-block-content fragment" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 14;" data-fragment-index="2">
+<p>All escape characters start with a backslash "\". </p>
+</div></div></div>
+<div class="sl-block" data-block-type="text" style="width: 872px; left: 36px; top: 544px; height: auto;" data-block-id="7ec40f5b07b00fd24388e66b15fff4b7"><div class="sl-block-style" style="z-index: 15;"><div class="sl-block-content fragment" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 15; font-size: 90%;" data-fragment-index="3">
+<p>You can do advanced things like include hexadecimal characters with "\x"</p>
+</div></div></div>
+<div class="sl-block" data-block-type="code" style="min-width: 30px; min-height: 30px; width: 500px; height: 40px; left: 211px; top: 610px;" data-block-id="6deb6d4694aa74325adb4d4befc6f146"><div class="sl-block-content fragment" data-highlight-theme="solarized-light" style="z-index: 16; font-size: 130%;" data-fragment-index="4"><pre class="python"><code>hexadecimal = "\x41\x42\x43"  # "abc"
+</code></pre></div></div></section><section data-id="c6e7cca0deb9765237048c2bce8845ed"><div class="sl-block" data-block-type="text" style="height: auto; width: 800px; left: 80px; top: 75px;" data-block-id="fee006ae7dbc4de400f1b70699bef2bd"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 10; font-size: 180%; color: rgb(0, 150, 136);" dir="ui">
+<p>String Concatenation</p>
+</div></div>
+<div class="sl-block" data-block-type="text" style="width: 863px; left: 49px; top: 210px; height: auto;" data-block-id="d0fefa4062a84c5193db332d0f77fb47"><div class="sl-block-style" style="z-index: 11;"><div class="sl-block-content fragment" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 11;" data-fragment-index="0">
+<p>Concatenation is combining multiple strings together. In Python you can do this simply with the "+" operator.</p>
+</div></div></div>
+<div class="sl-block" data-block-type="code" style="min-width: 30px; min-height: 30px; width: 593px; height: 97px; left: 184px; top: 323px;" data-block-id="32801544b67b5d49d67572bb88890ac8"><div class="sl-block-content fragment" data-highlight-theme="solarized-light" style="z-index: 12; font-size: 130%;" data-fragment-index="1"><pre class="python"><code>str_one = "your"
+str_two = "face"
+str_three = str_one + " " + str_two  # your face</code></pre></div></div>
+<div class="sl-block" data-block-type="text" style="width: 863px; left: 55px; top: 465px; height: auto;" data-block-id="532112ec88f8354c55df1385306aa2d1"><div class="sl-block-style" style="z-index: 14;"><div class="sl-block-content fragment" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 14;" data-fragment-index="2">
+<p>You can also use the "+=" operator!</p>
+</div></div></div>
+<div class="sl-block" data-block-type="code" style="min-width: 30px; min-height: 30px; width: 483px; height: 85px; left: 237px; top: 545px;" data-block-id="270ea2281df15d6bfb0dd1e2f103cb1c"><div class="sl-block-content fragment" data-highlight-theme="solarized-light" style="z-index: 15; font-size: 130%;" data-fragment-index="3"><pre class="python"><code>str_one = "ice"
+str_one += " cream"
+str_one  # ice cream</code></pre></div></div></section><section data-id="265c57143757af12d2b752d825bc1caa"><div class="sl-block" data-block-type="text" style="height: auto; width: 800px; left: 80px; top: 75px;" data-block-id="07e37c440c1825091b211c30653936b6"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 10; font-size: 180%; color: rgb(0, 150, 136);" dir="ui">
+<p>Formatting Strings</p>
+</div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; min-width: 30px; min-height: 30px; width: 668px; left: 146px; top: 174px;" data-block-id="fdfa3e108911a92cabd3abb344fa195b"><div class="sl-block-content fragment" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 11;" data-fragment-index="0">
+<p>There are also several ways to format strings in Python to <strong>interpolate</strong> variables.</p>
+</div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; min-width: 30px; min-height: 30px; width: 668px; left: 146px; top: 280px;" data-block-id="030aa1ad29acc45e7e6e686e227e5757"><div class="sl-block-content fragment" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 12;" data-fragment-index="1">
+<p>The new way (new in Python 3.6+) =&gt; <strong>F-Strings</strong></p>
+</div></div>
+<div class="sl-block" data-block-type="code" style="min-width: 30px; min-height: 30px; width: 593px; height: 61px; left: 184px; top: 334px;" data-block-id="e2a6ffab501b270275fa3d917ef4aa0f"><div class="sl-block-content fragment" data-highlight-theme="solarized-light" style="z-index: 13; font-size: 130%;" data-fragment-index="2"><pre class="python"><code>x = 10
+formatted = f"I've told you {x} times already!"</code></pre></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; min-width: 30px; min-height: 30px; width: 793px; left: 87px; top: 420px;" data-block-id="4a18639eb26e0d82bcd01d8f57879014"><div class="sl-block-content fragment" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 14;" data-fragment-index="3">
+<p>The tried-and-true way (Python 2 -&gt; 3.5) =&gt; <strong>.format</strong> <strong>method</strong></p>
+</div></div>
+<div class="sl-block" data-block-type="code" style="min-width: 30px; min-height: 30px; width: 693px; height: 61px; left: 134px; top: 473px;" data-block-id="19726bdc8ec8a5b7be36f32b95c333eb"><div class="sl-block-content fragment" data-highlight-theme="solarized-light" style="z-index: 15; font-size: 130%;" data-fragment-index="4"><pre class="python"><code>x = 10
+formatted = "I've told you {} times already!".format(x)</code></pre></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; min-width: 30px; min-height: 30px; width: 668px; left: 160px; top: 554px;" data-block-id="7c80f27d0d1ba094363c9205a8b48799"><div class="sl-block-content fragment" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 17;" data-fragment-index="5">
+<p>The old way =&gt; <strong>% operator</strong> (deprecated)</p>
+</div></div>
+<div class="sl-block" data-block-type="code" style="min-width: 30px; min-height: 30px; width: 693px; height: 61px; left: 137px; top: 607px;" data-block-id="121f63196958257a0546379eabf799fa"><div class="sl-block-content fragment" data-highlight-theme="solarized-light" style="z-index: 18; font-size: 130%;" data-fragment-index="6"><pre class="python"><code>x = 10
+formatted = "I've told you %d times already!" % (x)</code></pre></div></div></section><section data-id="33f558eca8711e47418517dae852a325">
+<div class="sl-block" data-block-type="text" style="height: auto; width: 800px; left: 80px; top: 75px;" data-block-id="3c71c230bfb316628d14e97f52cbe785"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 10; font-size: 180%; color: rgb(0, 150, 136);" dir="ui">
+<p>Converting Data Types</p>
+</div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; min-width: 30px; min-height: 30px; width: 854px; left: 66px; top: 192px;" data-block-id="0ca39607a23d30ec97281e43a338ec75"><div class="sl-block-content fragment" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 11;" data-fragment-index="0">
+<p>In string interpolation, data types are implicitly converted into string form (more on this later in OOP).</p>
+</div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; min-width: 30px; min-height: 30px; width: 854px; left: 59px; top: 314px;" data-block-id="ff77dae0b98de9e570cd90562e6c50e2"><div class="sl-block-content fragment" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 12;" data-fragment-index="1">
+<p>You can also explicitly convert variables by using the name of the builtin type as a function (more on functions later):</p>
+</div></div>
+<div class="sl-block" data-block-type="code" style="min-width: 30px; min-height: 30px; width: 616px; height: 61px; left: 184px; top: 420px;" data-block-id="f62f9034f91e89f70faf6605c87fd051"><div class="sl-block-content fragment" data-highlight-theme="solarized-light" style="z-index: 14; font-size: 130%;" data-fragment-index="2"><pre class="python"><code>decimal = 12.56345634534
+integer = int(decimal)  # 12</code></pre></div></div>
+<div class="sl-block" data-block-type="code" style="min-width: 30px; min-height: 30px; width: 616px; height: 61px; left: 184px; top: 516px;" data-block-id="79f04ce06409e771aedd426789cbf586"><div class="sl-block-content fragment" data-highlight-theme="solarized-light" style="z-index: 15; font-size: 130%;" data-fragment-index="3"><pre class="python"><code>my_list = [1, 2, 3]
+my_list_as_a_string = str(my_list)  # "[1, 2, 3]"</code></pre></div></div></section><section data-id="88f23403ff206fe3ed367ba99525e3de"><div class="sl-block" data-block-type="text" style="width: 921px; left: 20px; top: 99px; height: auto;" data-block-id="d1c059ccfdfd019f2768ac350a7af353"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 11;">
+<h1><span style="color:#009688"><span style="font-size:3.0em">MILEAGE CONVERTOR</span></span></h1>
+
+<p><span style="color:#2196f3"><span style="font-size:84px">CODE-ALONG</span></span></p>
+</div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; min-width: 30px; min-height: 30px; width: 168px; left: 742px; top: 297px;" data-block-id="0f745d07828152546b134126caf8eb9b"><div class="sl-block-style" style="z-index: 12; transform: rotate(28deg);"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 12;">
+<p>converter?</p>
+</div></div></div></section><section data-id="bce3c5492ff0ce5e5c35c84b5b7adf28">
+
+<div class="sl-block" data-block-type="text" style="height: auto; width: 800px; left: 80px; top: 75px;" data-block-id="ec87ef20819cc10138666f43a4f7d1e7"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 11; font-size: 180%; color: rgb(0, 150, 136);" dir="ui">
+<p>Recap</p>
+</div></div>
+
+
+
+
+
+
+<div class="sl-block" data-block-type="text" data-block-id="921f51f294ec183a90f8479056aabe5b" style="height: auto; min-width: 30px; min-height: 30px; width: 800px; left: 80px; top: 208px;"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 12; text-align: left;" dir="ui"><ul><li class="fragment" data-fragment-index="0">Python is a dynamically-typed language with more than half a dozen types</li></ul></div></div>
+<div class="sl-block" data-block-type="text" data-block-id="48ffb722d2cf742c50ce3b562bfb73f3" style="height: auto; min-width: 30px; min-height: 30px; width: 800px; left: 80px; top: 333px;"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 13;">
+<ul>
+	<li class="fragment" data-fragment-index="1">Python lets you assign and reassign variables at will to any of the types</li>
+</ul>
+</div></div>
+<div class="sl-block" data-block-type="text" data-block-id="0e35e22e398ccd9551f69cc633c6127c" style="height: auto; min-width: 30px; min-height: 30px; width: 800px; left: 80px; top: 471px;"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 14;">
+<ul>
+	<li class="fragment" data-fragment-index="2">There are some variable naming restrictions which are required and some naming guidelines which are recommended</li>
+</ul>
+</div></div></section><section data-id="b0ead2eda0e447d113c398ac6b02b02d"><div class="sl-block" data-block-type="text" style="height: auto; width: 753px; left: 104px; top: 56px;" data-block-id="c55397128a580bbe2725502c6fef7506"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 10; font-size: 130%; letter-spacing: -0.010000000000000009em; line-height: 0.8580000000000001;" data-has-letter-spacing="" data-has-line-height="">
+<h1><span style="font-size:5.0em"><span style="color:#009688">YOUR</span> <span style="color:#cddc39">TURN</span></span></h1>
+</div></div></section>
+				</div>
+					<div id="theme-html-output"></div>
+				<div class="deck-kudos">
+					<button class="kudos-button kudos-trigger" data-kudos-id="1168595" data-kudoed-by-user="false">
+						<div class="kudos-heart">
+							<span class="kudos-icon icon i-heart-fill"></span>
+						</div>
+						<div class="kudos-count" data-kudos-value="91" data-kudos-id="1168595"></div>
+					</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="pill summary-pill">
+		<div class="pill-picture" style="background-image: url(https://www.gravatar.com/avatar/cdb937abb693a7a0e2befe176fd6e01c?s=140&amp;d=https%3A%2F%2Fstatic.slid.es%2Fimages%2Fdefault-profile-picture.png)"></div>
+		<div class="pill-content">
+			<h4 class="pill-title">Variables and Data Types</h4>
+			<p class="pill-description">By colt</p>
+		</div>
+	</div>
+
+	<div class="pill instructions-pill">
+		<div class="pill-picture"></div>
+		<div class="pill-content">
+			<h4 class="pill-title"></h4>
+			<p class="pill-description"></p>
+		</div>
+	</div>
+
+</div>
+
+
+<div class="column">
+	<header class="deck-card">
+
+		<div class="deck-card-header">
+				<div class="deck-social">
+					<a href="#" class="deck-social-button facebook-share-button" data-tooltip="Share on Facebook">
+						<span class="icon i-facebook"></span>
+					</a>
+					<a href="#" class="deck-social-button twitter-share-button" data-tooltip="Share on Twitter">
+						<span class="icon i-twitter"></span>
+					</a>
+				</div>
+
+			<div class="deck-options">
+				<a class="fullscreen-button" data-tooltip="Fullscreen" href="#"><span class="icon i-fullscreen"></span></a>
+				<a class="comment-button" data-tooltip="Comments" data-scroll-to href="#comments" data-scroll-to data-scroll-to-offset="-90"><span class="icon i-comment-stroke"></span></a>
+				<a class="share-button" data-tooltip="Share" href="#"><span class="icon i-share"></span></a>
+			</div>
+
+			<div class="deck-promotion">
+				<a class="button cta" href="/eschoppik1/variables-and-data-types" data-tooltip="This deck was copied from 'Variables and Data Types' by eschoppik1">Source: <span class="text-semi-bold">eschoppik1</span></a>
+			</div>
+
+		</div>
+
+		<div class="clear"></div>
+
+		<div class="deck-card-body">
+			<div class="deck-info">
+				<h3 class="title">Variables and Data Types</h3>
+				<ul class="deck-meta">
+					<li data-tooltip="Published date" data-tooltip-delay="500">
+						<span class="icon i-clock"></span>
+						<time class="value ago" datetime="2018-02-05 06:56:59 UTC"></time>
+					</li>
+					<li data-tooltip="Kudos" data-tooltip-delay="500">
+						<span class="icon i-heart-fill"></span>
+						<span class="value" data-kudos-value="91" data-kudos-id="1168595"></span>
+					</li>
+					<li data-tooltip="Views" data-tooltip-delay="500">
+						<span class="icon i-eye"></span>
+						<span class="value">5,932</span>
+					</li>
+				</ul>
+			</div>
+
+			<div class="user-info">
+	<div class="picture" style="background-image: url(https://www.gravatar.com/avatar/cdb937abb693a7a0e2befe176fd6e01c?s=140&amp;d=https%3A%2F%2Fstatic.slid.es%2Fimages%2Fdefault-profile-picture.png)"></div>
+	<div class="text">
+		<h3 class="title">
+			<a href="/colt" class="username">colt</a>
+		</h3>
+		<p class="description"></p>
+		<ul class="links">
+			
+			
+		</ul>
+	</div>
+	<div class="clear"></div>
+</div>
+
+			<div class="clear"></div>
+		</div>
+	</header>
+
+	<section class="comments" id="comments">
+		<div id="disqus_thread"><span class="placeholder">Loading comments...</span></div>
+	</section>
+
+	<section class="deck-list">
+		<h2>More from <a href="/colt">colt</a></h2>
+		<ul class="carousel">
+			<li class="deck-thumbnail">
+  <a class="deck-link" href="/colt/python-sql"></a>
+  <div class="deck-image" style="background-image: url(https://s3.amazonaws.com/media-p.slid.es/thumbnails/a885937fcb2c59e1562c486b0e644d9a/thumb.jpg?1541786687)"></div>
+  <footer class="deck-details">
+    <div class="top">
+      <div class="title">PYTHON + SQL</div>
+    </div>
+    <div class="bottom">
+      <a class="author" href="/colt">
+        <span class="picture" style="background-image: url(https://www.gravatar.com/avatar/cdb937abb693a7a0e2befe176fd6e01c?s=140&amp;d=https%3A%2F%2Fstatic.slid.es%2Fimages%2Fdefault-profile-picture.png)"></span>
+        <span class="name">colt</span>
+      </a>
+      <div class="stats">
+        <div>162<span class="icon i-eye"></span></div>
+      </div>
+    </div>
+  </footer>
+</li>
+<li class="deck-thumbnail">
+  <a class="deck-link" href="/colt/web-scraping"></a>
+  <div class="deck-image" style="background-image: url(https://s3.amazonaws.com/media-p.slid.es/thumbnails/26f692cb3e91f1651ebce0ff2293829b/thumb.jpg?1507567814)"></div>
+  <footer class="deck-details">
+    <div class="top">
+      <div class="title">The Command Line(MAC)</div>
+    </div>
+    <div class="bottom">
+      <a class="author" href="/colt">
+        <span class="picture" style="background-image: url(https://www.gravatar.com/avatar/cdb937abb693a7a0e2befe176fd6e01c?s=140&amp;d=https%3A%2F%2Fstatic.slid.es%2Fimages%2Fdefault-profile-picture.png)"></span>
+        <span class="name">colt</span>
+      </a>
+      <div class="stats">
+        <div>2888<span class="icon i-eye"></span></div>
+      </div>
+    </div>
+  </footer>
+</li>
+<li class="deck-thumbnail">
+  <a class="deck-link" href="/colt/regex"></a>
+  <div class="deck-image" style="background-image: url(https://s3.amazonaws.com/media-p.slid.es/thumbnails/99e4d2fda0f9920c7f48a26302fd034d/thumb.jpg?1517357203)"></div>
+  <footer class="deck-details">
+    <div class="top">
+      <div class="title">REGEX</div>
+    </div>
+    <div class="bottom">
+      <a class="author" href="/colt">
+        <span class="picture" style="background-image: url(https://www.gravatar.com/avatar/cdb937abb693a7a0e2befe176fd6e01c?s=140&amp;d=https%3A%2F%2Fstatic.slid.es%2Fimages%2Fdefault-profile-picture.png)"></span>
+        <span class="name">colt</span>
+      </a>
+      <div class="stats">
+        <div>910<span class="icon i-eye"></span></div>
+      </div>
+    </div>
+  </footer>
+</li>
+<li class="deck-thumbnail">
+  <a class="deck-link" href="/colt/command-line-28"></a>
+  <div class="deck-image" style="background-image: url(https://s3.amazonaws.com/media-p.slid.es/thumbnails/26f692cb3e91f1651ebce0ff2293829b/thumb.jpg?1507567814)"></div>
+  <footer class="deck-details">
+    <div class="top">
+      <div class="title">Command Line(Windows)</div>
+    </div>
+    <div class="bottom">
+      <a class="author" href="/colt">
+        <span class="picture" style="background-image: url(https://www.gravatar.com/avatar/cdb937abb693a7a0e2befe176fd6e01c?s=140&amp;d=https%3A%2F%2Fstatic.slid.es%2Fimages%2Fdefault-profile-picture.png)"></span>
+        <span class="name">colt</span>
+      </a>
+      <div class="stats">
+        <div>3010<span class="icon i-eye"></span></div>
+      </div>
+    </div>
+  </footer>
+</li>
+
+		</ul>
+	</section>
+
+</div>
+      </div>
+      <footer class="global-footer global-footer-minimal">
+  <div class="legal">
+    <a href="http://help.slides.com">Help &amp; Support</a>
+    &bull; <a href="http://python.slides.com/terms?root=true">Terms</a>
+    &bull; <a href="http://python.slides.com/privacy?root=true">Privacy</a>
+    &bull; <span class="copyright">&copy; 2019 Slides, Inc.</span>
+   </div>
+</footer>
+
+    </div> <!--! end of #container -->
+    <script>
+UserVoice=window.UserVoice||[];(function(){var uv=document.createElement('script');uv.type='text/javascript';uv.async=true;uv.src='//widget.uservoice.com/f7sH7NavrjjvuGxByaw.js';var s=document.getElementsByTagName('script')[0];s.parentNode.insertBefore(uv,s)})();
+
+UserVoice.push(['set', {
+  accent_color: '#448dd6',
+  trigger_color: 'white',
+  trigger_background_color: 'rgba(46, 49, 51, 0.6)',
+  position: 'automatic'
+}]);
+
+</script>
+    
+<script>
+	var SLConfig = {"team":{"id":1341,"name":"Python","slug":"python","logo":null,"default_theme_id":1610,"user_count":2,"allow_scripts":false,"themes":[{"id":1610,"created_at":"2017-09-15T03:56:16.141Z","updated_at":"2017-09-19T23:11:35.937Z","name":"Python Course","thumbnail_url":"https://s3.amazonaws.com/media-p.slid.es/thumbnails/2134bea753a4e91666b5a83255832b7b/thumb.jpg?1505862694","sanitize_messages":null,"slide_template_ids":[],"font_typekit":"","font_google":"","width":960,"height":700}],"beta_new_editor":true,"manually_upgraded":false,"allow_public_decks":true},"deck":{"id":1168595,"slug":"oop-21","title":"Variables and Data Types","description":"","width":960,"height":700,"visibility":"all","published_at":"2018-02-05T06:56:59.733Z","sanitize_messages":null,"thumbnail_url":"https://s3.amazonaws.com/media-p.slid.es/thumbnails/24d7a904fbe760e60b0fef26c62dcec3/thumb.jpg?1512082676","view_count":5932,"user":{"id":757808,"username":"colt","name":null,"description":null,"thumbnail_url":"https://www.gravatar.com/avatar/cdb937abb693a7a0e2befe176fd6e01c?s=140\u0026d=https%3A%2F%2Fstatic.slid.es%2Fimages%2Fdefault-profile-picture.png","paid":true,"pro":true,"lite":false,"team_id":1341,"settings":{"id":608348,"present_controls":true,"present_upsizing":true,"present_pointer":false,"present_notes":true,"default_deck_tag_id":null},"enterprise":true,"membership":{"role":"owner","manager":true,"activated":true}},"background_transition":"slide","transition":"slide","theme_id":1610,"theme_font":"overpass2","theme_color":"white-blue","auto_slide_interval":0,"comments_enabled":true,"forking_enabled":true,"rolling_links":false,"center":false,"shuffle":null,"should_loop":false,"share_notes":false,"slide_number":false,"slide_count":24,"rtl":false,"version":2,"collaborative":false,"deck_user_editor_limit":null,"data_updated_at":1517816384034,"font_typekit":null,"font_google":null},"theme":{"id":1610,"created_at":"2017-09-15T03:56:16.141Z","updated_at":"2017-09-19T23:11:35.937Z","name":"Python Course","thumbnail_url":"https://s3.amazonaws.com/media-p.slid.es/thumbnails/2134bea753a4e91666b5a83255832b7b/thumb.jpg?1505862694","sanitize_messages":null,"slide_template_ids":[],"font_typekit":"","font_google":"","width":960,"height":700},"user":{"id":757808,"username":"colt","name":null,"description":null,"thumbnail_url":"https://www.gravatar.com/avatar/cdb937abb693a7a0e2befe176fd6e01c?s=140\u0026d=https%3A%2F%2Fstatic.slid.es%2Fimages%2Fdefault-profile-picture.png","paid":true,"pro":true,"lite":false,"team_id":1341,"settings":{"id":608348,"present_controls":true,"present_upsizing":true,"present_pointer":false,"present_notes":true,"default_deck_tag_id":null},"enterprise":true,"membership":{"role":"owner","manager":true,"activated":true}}};
+</script>
+    <script src="//assets.slid.es/assets/application-87dc57ef2d9939df6a6b4e8557a77ae2dac4f94e92c6e039482d223e9040aa09.js" defer="defer"></script>
+    	<script src="//assets.slid.es/assets/deck-af680cf8796a9a2b9a1b8f1e8772a0294faeb08bc882252725fd64752db50187.js" defer="defer"></script>
+	
+
+
+  </body>
+</html>
