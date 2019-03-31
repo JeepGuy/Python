@@ -1,7 +1,5 @@
-# Learn Code the Hard Way (Python)
-# Excersize 10 - additional practice
-#
-# Jim Brent 9 Jun 2016
+# Escape Characters
+# JCBrent
 #
 # The following is a code hack to eliminate ASCii encoding errors if in a foreign country
 # -*- coding: utf-8 -*-
