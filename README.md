@@ -1,2 +1,2 @@
 # Python
-Repo for Python notes and the excersizes from the TryPython Course
+Repo for Python notes and exercises
