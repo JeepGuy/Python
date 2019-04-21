@@ -1,5 +1,5 @@
 test.py
 .xml
 .idea*
-.iml
+*.iml
 *.imi
