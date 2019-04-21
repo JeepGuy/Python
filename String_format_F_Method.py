@@ -9,7 +9,7 @@ print(formatted)
 
 print(f"I've told you {x + 1 } times already!")
 
-# old format = format method.
+# Python 3.5 old format = format method.
 formatted_old = "I've told you {} times already!".format(12)
 print(formatted_old)
 

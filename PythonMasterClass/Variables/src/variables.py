@@ -85,7 +85,7 @@ print(a * b)
 
 print(a * b)
 print(a / b)  # in Python returns as a float unless you use floor division
-print(a // b) # Florr division returns a whole number
+print(a // b) # Floor division returns a whole number
 print(a % b)
 
 print (' ')

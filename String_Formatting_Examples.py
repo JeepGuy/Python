@@ -199,6 +199,14 @@ print(formatted)
 print(f"I've told you {x + 1 } times already!")
 
 print('')
+y = 11
+formatted2 = f"First Var is  {x} and the second var is {y}"
+
+print(formatted2)
+
+print('formatted2 = f"First Var is  {x} and the second var is {y}"')
+
+print('')
 print(' ------------------------------------------------------------------------------ ')
 print(' String formatting: Format method.  ~ Python 3.5 and before method.')
 print(' ------------------------------------------------------------------------------ ')

@@ -16,7 +16,7 @@ print("The backslash character is escaped by typing a slash in front of it, as i
 
 print("The backslash character is escaped by typing a slash in front of it, as in %s using the raw string = percent s \n" % x_backslash)
 
-y_single_quote = "(\\')"
+y_single_quote = "(\\')" 
 
 print(" \\' = single quote escape %s  \n"% y_single_quote)
 
