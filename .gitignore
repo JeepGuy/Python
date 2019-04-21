@@ -2,4 +2,4 @@ test.py
 .xml
 .idea*
 *.iml
-*.imi
+Python.iml
